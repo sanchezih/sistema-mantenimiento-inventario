@@ -14,16 +14,19 @@ import com.companyname.springapp.business.SpringappBusinessConfig;
 import com.companyname.springapp.web.SpringappWebConfig;
 
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes = { SpringappBusinessConfig.class, SpringappWebConfig.class })
+@ContextConfiguration(classes = {SpringappBusinessConfig.class, SpringappWebConfig.class})
 @WebAppConfiguration
 public class HelloControllerTests {
 
-	@Autowired
-	private HelloController controller;
+    @Autowired
+    private HelloController controller;
 
-	@Test
-	public void testHandleRequestView() {
-		ModelAndView modelAndView = controller.handleRequest();
-		assertEquals("hello.jsp", modelAndView.getViewName());
-	}
+    @Test
+    public void testHandleRequestView() {	
+        ModelAndView modelAndView = controller.handleRequest();		
+        assertEquals("WEB-INF/views/hello.jsp", modelAndView.getViewName());
+        assertNotNull(modelAndView.getModel());
+        String nowValue = (String) modelAndView.getModel().get("now");
+        assertNotNull(nowValue);
+    }
 }
