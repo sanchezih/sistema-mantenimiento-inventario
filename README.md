@@ -1,1 +1,1 @@
-# sprinapp
+# sistema-mantenimiento-inventario
