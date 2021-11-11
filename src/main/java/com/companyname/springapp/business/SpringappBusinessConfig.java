@@ -1,7 +1,5 @@
 package com.companyname.springapp.business;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Properties;
 
 import javax.sql.DataSource;
@@ -20,8 +18,6 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 import com.companyname.springapp.business.entities.Product;
-import com.companyname.springapp.business.services.ProductManager;
-import com.companyname.springapp.business.services.SimpleProductManager;
 
 @Configuration
 @ComponentScan
