@@ -3,3 +3,5 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/sanchezih/sistema-mantenimiento-inventario)
 
 Aplicación Spring Web MVC v5 + Spring Data JPA
+
+https://www.uv.es/grimo/teaching/SpringMVCv5PasoAPaso/index.html
